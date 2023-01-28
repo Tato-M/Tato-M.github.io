@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(238, 249, 255);
+}
+
+h1,.profecion {
+    margin: 0;
+}
+
+.img-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    margin:0px auto;
+    background-image: url(img/face.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 200px;
+    height: 200px;
+    border: rgb(166, 193, 209) solid 2px;
+    box-shadow: 0px 0px 8px 4px rgb(191, 207, 218);
+    border-radius: 200px;
+    padding: 0px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.redes i {
+    font-size: 40px;
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius:10px;
+    transition: .8s;
+    color: #000;
+}
+
+.bxl-instagram:hover{
+    background: linear-gradient( 45deg, #fbff00, #c500f7);
+    color: #fff;
+}
+
+.bxl-facebook:hover{
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.bxl-linkedin:hover{
+    background-color: #0072b1;
+    color: #fff;
+}
+
+.bxl-github:hover{
+    background-color: #171515;
+    color: #fff;
+}
+
+
+@media (min-width: 761px){
+
+    header i, .closebtn, .bxs-down-arrow {
+        display: none !important;
+    }
+
+    .contenedor1, .contenedor2 {
+        display: flex;
+    }
+
+    .contenedor1 {
+        background-color: rgb(211 226 235);
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 55px;
+    }
+
+    .contenedor-nombre {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 10px;
+        color: #0072b1;
+        font-size: large;
+    }
+
+    a:hover{
+        color: #0400ff;
+    }
+
+    aside {
+        padding: 15px;
+        border-right: 2px solid #000;
+        background-color: rgb(211 226 235);
+    }
+
+    main {
+        padding: 15px;
+        border-top: 2px solid #000;
+    }
+
+    .acordeon {
+        background-color: rgb(211 226 235);
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        align-items: center;
+    }
+
+    .panel p {
+        margin: 15px;
+    }
+
+    li {
+        padding: 15px 0px 0px 0px;
+    }
+    
+}
+
+@media (max-width: 760px){
+
+    header {
+        position: relative;
+    }
+
+    .contenedor-nombre {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 20px 40px 30px 40px;
+        border-bottom: 2px solid #000;
+        background-color: rgb(211 226 235);
+    }
+
+    header i{
+        font-size: 30px;
+        position: absolute;
+        float:right;
+    }
+
+    .menu {
+        height: 100%; 
+        width: 0; 
+        position: fixed; 
+        z-index: 1; 
+        top: 0;
+        left: 0;
+        background-color: #111; 
+        overflow-x: hidden; 
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 8px 10px 40px;
+        font-size: 25px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .menu .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    aside {
+        margin: 0px 5px;
+    }
+
+    li {
+        padding: 5px 0px 15px 0px;
+    }
+
+    main{
+        padding: 0px;
+        background-color: rgb(211 226 235);
+    }
+
+    .info {
+        list-style: none;
+        padding: 0px;
+    }
+
+    h2 {
+        margin: 10px 0px;
+    }
+
+    .acordeon {
+        background-color: rgb(211 226 235);
+        padding: 5px;
+        padding-right: 10px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        border-top: 2px solid;
+        outline: none;
+        transition: 0.4s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: rgb(238, 249, 255);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+    .panel p, .habilidades {
+        padding: 15px 0px;
+    }
+
+    .bxs-down-arrow {
+        transition: .5s;
+    }
+
+    .rotar {
+        transform: rotate(180deg);
+    }
+}

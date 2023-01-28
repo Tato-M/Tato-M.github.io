@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Curriculum - Santiago Meneguzzi</title>
+  </head>
+  <body id="body">
+    <div class="contenedor1">
+      <header>
+        <i class="bx bx-menu-alt-left" class="openbtn" onclick="openNav()"></i>
+        <div class="contenedor-nombre">
+          <h1>Marcus Richards</h1>
+          <p class="profecion">Desarrollador Full-Stack</p>
+        </div>
+      </header>
+      <nav class="menu" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">Proyectos</a>
+        <a href="#">Contáctame</a>
+        <a href="#">Sobre mi</a>
+      </nav>
+    </div>
+
+    <div class="contenedor2">
+      <aside>
+        <div class="img-contenedor">
+          <div class="imagen"></div>
+        </div>
+        <div class="redes-contenedor">
+          <div class="redes">
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+        <h2 class="datos-personales">Datos personales</h2>
+        <ul class="datos">
+          <li>Localidad: 8041 Stevens Creek Blvd</li>
+          <li>marcus.richards@example.com</li>
+          <li>Tel: (571) 829-4216</li>
+          <li>Fecha de nacimiento: 08/07/1947</li>
+          <li>Estado civil: Soltero</li>
+          <li>Carnet de conducir: B1</li>
+        </ul>
+      </aside>
+
+      <main id="contenedor">
+        <section>
+          <button class="acordeon">
+            <h2>Perfil personal</h2>
+            <i class="bx bxs-down-arrow"></i>
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              provident autem sed rerum incidunt! Molestiae obcaecati, ratione
+              culpa nisi eius possimus, accusamus, error doloribus architecto
+              qui fuga esse consequuntur dicta!
+            </p>
+          </div>
+          <button class="acordeon">
+            <h2>Experiencia laboral</h2>
+            <i class="bx bxs-down-arrow"></i>
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              provident autem sed rerum incidunt! Molestiae obcaecati, ratione
+              culpa nisi eius possimus, accusamus, error doloribus architecto
+              qui fuga esse consequuntur dicta! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quam provident autem sed rerum
+              incidunt! Molestiae obcaecati, ratione culpa nisi eius possimus,
+              accusamus, error doloribus architecto qui fuga esse consequuntur
+              dicta!
+            </p>
+          </div>
+          <button class="acordeon">
+            <h2>Educacion</h2>
+            <i class="bx bxs-down-arrow"></i>
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              provident autem sed rerum incidunt! Molestiae obcaecati, ratione
+              culpa nisi eius possimus, accusamus, error doloribus architecto
+              qui fuga esse consequuntur dicta!
+            </p>
+          </div>
+          <button class="acordeon">
+            <h2>Habilidades</h2>
+            <i class="bx bxs-down-arrow"></i>
+          </button>
+          <div class="panel">
+            <ul class="habilidades">
+              <li>Diseño web (HTML, CSS, JavaScript)</li>
+              <li>Responsabilidad</li>
+              <li>Trabajo en equipo</li>
+              <li>Organización</li>
+              <li>Reparacion de equipos electronicos</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!--
+<div class="info">
+  <h2 class="titulo-section">Perfil personal</h2>
+  <i class="bx bxs-down-arrow"></i>
+</div>
+<p class="parrafo">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+  provident autem sed rerum incidunt! Molestiae obcaecati, ratione culpa
+  nisi eius possimus, accusamus, error doloribus architecto qui fuga
+  esse consequuntur dicta!
+</p>
+</section>
+
+<section>
+<div class="info">
+  <h2 class="titulo-section">Experiencia laboral</h2>
+  <i class="bx bxs-down-arrow"></i>
+</div>
+<p class="parrafo">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+  provident autem sed rerum incidunt! Molestiae obcaecati, ratione culpa
+  nisi eius possimus, accusamus, error doloribus architecto qui fuga
+  esse consequuntur dicta!
+</p>
+</section>
+
+<section>
+<div class="info">
+  <h2 class="titulo-section">Educacion</h2>
+  <i class="bx bxs-down-arrow"></i>
+</div>
+<p class="parrafo">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+  provident autem sed rerum incidunt! Molestiae obcaecati, ratione culpa
+  nisi eius possimus, accusamus, error doloribus architecto qui fuga
+  esse consequuntur dicta!
+</p>
+</section>
+
+<section>
+<div class="info">
+  <h2 class="titulo-section">Habilidades</h2>
+  <i class="bx bxs-down-arrow"></i>
+</div>
+<ul class="habilidades">
+  <li>Diseño web (HTML, CSS, JavaScript)</li>
+  <li>Responsabilidad</li>
+  <li>Trabajo en equipo</li>
+  <li>Organización</li>
+  <li>Reparacion de equipos electronicos</li>
+</ul>
+</section>
+-->
